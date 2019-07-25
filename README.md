@@ -12,7 +12,13 @@ To use this project you need to install some software:
     1. [python3](https://www.python.org/downloads/).
     2. [psycopg2](http://initd.org/psycopg/download/).
 
-After installing the software, since the dataset is an open source, if you already have it installed in your machine, you need to add the following 3 views at the end of the file:
+After installing the software, you need to download the database file from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
+After downloading the database file newsdata.zip, you need to set up the database prior to
+add the VIEWs and prior to running the program. Finally, you need to run main.py python file by using this command:
+`python3 main.py`
+
+Once you run main.py file, these views will be created and the app will be running:
+
     
     CREATE VIEW most_viewed_articles AS
         SELECT title, count(path) as views 
@@ -37,9 +43,6 @@ After installing the software, since the dataset is an open source, if you alrea
         GROUP BY TO_CHAR(log.time, 'FMMonth DD, YYYY')
         HAVING COUNT(status_4) >= ((COUNT(*)-COUNT(status_4)) * .01);
         
-After that, run the newsdata.sql file so that you add the queries to your database.
-Once the file is finished processing queries, run main.py python file by using this command:
-`python3 main.py`
 
 This python file will ask you to choose between 3 different analysis please choose the one you need and test it out. Got a new one? please send a pull request. ^_^
 
