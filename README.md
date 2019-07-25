@@ -13,7 +13,7 @@ To use this project you need to install some software:
     2. psycopg2.
 
 After installing the software, since the dataset is open source, if you already have it installed in your machine, you need to add the following 3 views at the end of the file:
-    `
+    ```
     CREATE VIEW most_viewed_articles AS
         SELECT title, count(path) as views 
         FROM articles 
@@ -36,7 +36,7 @@ After installing the software, since the dataset is open source, if you already 
         ON status_4.id = log.id
         GROUP BY TO_CHAR(log.time, 'FMMonth DD, YYYY')
         HAVING COUNT(status_4) >= ((COUNT(*)-COUNT(status_4)) * .01);
-    `
+    ```
 
     After that, run the newsdata.sql file so that you add the queries to your database.
     Once the file finished processing queries, run main.py python file by using this command:
