@@ -20,7 +20,7 @@ add the VIEWs and prior to running the program. You can set up the database by u
 Then add the views to the database by processing the create_views file:
 `psql news -f newsdata.sql`
 
-    #first-question
+    # first-question
     CREATE VIEW most_viewed_articles AS
         SELECT title, count(path) as views 
         FROM articles 
