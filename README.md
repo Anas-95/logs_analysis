@@ -9,9 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 To use this project you need to install some software:
-
-    1. [python3](https://www.python.org/downloads/).
-    2. [psycopg2](http://initd.org/psycopg/download/).
+1. [python3](https://www.python.org/downloads/).
+2. [psycopg2](http://initd.org/psycopg/download/).
 
 After installing the software, you need to download the database file from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 After downloading the database file newsdata.zip, you need to set up the database prior to
