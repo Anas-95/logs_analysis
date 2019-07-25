@@ -1,8 +1,8 @@
 ## Logs Analysis
 This project is to analysing logs from a dataset to answer 3 questions:
-[###### 1. What are the most popular three articles of all time?](#first-question)
-[###### 2. Who are the most popular article authors of all time?](#first-question)
-[###### 3. On which days did more than 1% of requests lead to errors?](#first-question)
+###### [1. What are the most popular three articles of all time?](#first-question)
+###### [2. Who are the most popular article authors of all time?](#first-question)
+###### [3. On which days did more than 1% of requests lead to errors?](#first-question)
 
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
