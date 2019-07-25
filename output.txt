@@ -1,0 +1,13 @@
+1: Most Viewed 3 Articles
+2: Most Popular Articles
+3: Days With More Than 1% errors
+4: Exit
+
+1
+
+Candidate is jerk, alleges rival -- 338647 views
+Bears love berries, alleges bear -- 253801 views
+Bad things gone, say good people -- 170098 views
+
+Press enter to continue
+
