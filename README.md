@@ -1,8 +1,8 @@
 ## Logs Analysis
 This project is to analysing logs from a dataset to answer 3 questions:
-###### 1. What are the most popular three articles of all time?
-###### 2. Who are the most popular article authors of all time?
-###### 3. On which days did more than 1% of requests lead to errors?
+[###### 1. What are the most popular three articles of all time?](#first-question)
+[###### 2. Who are the most popular article authors of all time?](#first-question)
+[###### 3. On which days did more than 1% of requests lead to errors?](#first-question)
 
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
@@ -20,7 +20,7 @@ add the VIEWs and prior to running the program. You can set up the database by u
 Then add the views to the database by processing the create_views file:
 `psql news -f newsdata.sql`
 
-    
+    (#first-question)
     CREATE VIEW most_viewed_articles AS
         SELECT title, count(path) as views 
         FROM articles 
