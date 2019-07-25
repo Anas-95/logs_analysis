@@ -1,4 +1,4 @@
-## Logs Analysis
+# Logs Analysis
 This project is to analysing logs from a dataset to answer 3 questions:
 ###### 1. What are the most popular three articles of all time?
 ###### 2. Who are the most popular article authors of all time?
