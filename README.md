@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 To use this project you need to install some software:
+
     1. [python3](https://www.python.org/downloads/).
     2. [psycopg2](http://initd.org/psycopg/download/).
 
@@ -17,7 +18,7 @@ After downloading the database file newsdata.zip, you need to set up the databas
 add the VIEWs and prior to running the program. You can set up the database by using this command:
 `psql news -f newsdata.sql`
 
-Then add the views to the database by processing the create_views file:
+Then add the views to the database by running the create_views.sql file:
 `psql news -f newsdata.sql`
 
     CREATE VIEW most_viewed_articles AS
