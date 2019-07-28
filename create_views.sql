@@ -1,7 +1,7 @@
 CREATE VIEW most_viewed_articles AS
     SELECT title, count(path) as views 
     FROM articles 
-    LEFT JOIN log ON path like CONCAT('%/article/', slug) 
+    LEFT JOIN log ON path = CONCAT('/article/', slug) 
     GROUP BY title 
     ORDER BY views DESC;
 

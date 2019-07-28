@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 
 import psycopg2
+import sys
 
 
 def db_connection():
-    db = psycopg2.connect(dbname="news")
-    c = db.cursor()
-    return db, c
+    try:
+        db = psycopg2.connect(dbname="news")
+    except psycopg2.Error as e:
+        print("Unable to connect!")
+        print(e.pgerror)
+        print(e.diag.message_detail)
+        sys.exit(1)
+    else:
+        print("Wait a moment!")
+        c = db.cursor()
+        return db, c
 
 
 def most_viewed_3_articles():
