@@ -49,7 +49,7 @@ Finally, you need to run main.py python file by using this command:
 This python file will ask you to choose between 3 different analysis please choose the one you need and test it out. Got a new one? please send a pull request. ^_^
 
 ### Authors
-Anas Almohsen - Anas95A
+Anas Almohsen - Anas-95
 See also the list of contributors who participated in this project.
 
 ### Acknowledgments
